@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+.pin-number {
+  background-color: #cccccc;
+  min-inline-size: 1.75em;
+}
+
+.badge {
+  border: 1px solid rgba(0.33, 0.33, 0.33, 0.2);
+  border-radius: 0.25em;
+  padding: 0;
+}
+
+label.badge,
+.badge.pin-name,
+.badge-text {
+  padding-inline: 0.25em;
+  padding-block: 0.125em;
+}
+
+.badge-text {
+  display: inline-block;
+  border-inline: 1px solid rgba(0.33, 0.33, 0.33, 0.2);
+}
+
+.badge-text:first-of-type {
+  border-inline-start: none;
+}
+
+.badge-text:last-of-type {
+  border-inline-end: none;
+}
+
+.badge-divider {
+  font-size: 0;
+}
+
+.dense {
+  margin: -0.125em;
+}
+
+label.badge,
+div.badge {
+  display: inline-block;
+  margin: 0.125em 0.125em;
+}
+
+.pin-name {
+  background: moccasin;
+  color: black;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table.pinout {
+  border-spacing: 0.25em;
+  border-collapse: separate;
+  margin: 0 auto;
+  width: auto;
+}
+
+td.ic {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  border: 4px solid #555;
+}
+
+td {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+td.empty:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid black;
+  background: black;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.wrapper {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.legend label {
+  flex-grow: 1;
+}
